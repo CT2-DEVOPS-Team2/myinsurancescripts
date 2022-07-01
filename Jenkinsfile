@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-		git clone 'https://github.com/CT2-DEVOPS-Team2/myinsurancescripts.git'
+		bat git clone 'https://github.com/CT2-DEVOPS-Team2/myinsurancescripts.git'
                 echo 'Hello World'
             }
         }
