@@ -1,0 +1,10 @@
+MANIFEST.in
+README.txt
+setup.py
+linux/linuxscripts.sh
+my_insurance_scripts.egg-info/PKG-INFO
+my_insurance_scripts.egg-info/SOURCES.txt
+my_insurance_scripts.egg-info/dependency_links.txt
+my_insurance_scripts.egg-info/requires.txt
+my_insurance_scripts.egg-info/top_level.txt
+python/appapi.py
