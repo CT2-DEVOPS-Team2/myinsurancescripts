@@ -1,11 +1,36 @@
 pipeline {
     agent any
+    
     stages {
-        stage('Hello') {
+        stage('Checkout') {
             steps {
-		echo 'Hello World'
-		bat git clone 'https://github.com/CT2-DEVOPS-Team2/myinsurancescripts.git'
-               
+                git branch: 'main',url: 'https://github.com/CT2-DEVOPS-Team2/myinsurancescripts.git' 
+                
+	        }
+        }        
+        stage('Compile') {
+            steps {
+                echo 'Building...'
+                }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing...'
+            }
+        }
+        stage('Package') {
+            steps {
+                echo 'Packaging...'                
+            }
+        }
+        stage('Acceptance test') {
+            steps {
+                echo 'Acceptance...'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
             }
         }
     }
